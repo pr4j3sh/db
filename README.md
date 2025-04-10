@@ -1,6 +1,6 @@
 # db
 
-This is a in-memory database written in javascript.
+This is an in-memory database written in javascript.
 
 ## Usage
 

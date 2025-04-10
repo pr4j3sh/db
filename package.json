@@ -1,0 +1,44 @@
+{
+  "name": "@pr4j3sh/db",
+  "description": "In-memory database.",
+  "version": "1.0.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "exports": {
+    "require": "dist/index.cjs",
+    "import": "dist/index.mjs"
+  },
+  "bin": {
+    "javascript": "dist/index.cjs"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "node esbuild.config.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "database",
+    "npm",
+    "javascript",
+    "commonjs",
+    "frames"
+  ],
+  "author": "Prajesh Pratap Singh <prajesh.eleven118@gmail.com> (https://pr4j3sh.github.io/pr4j3sh/)",
+  "license": "MIT",
+  "homepage": "https://github.com/pr4j3sh/db#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pr4j3sh/db.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pr4j3sh/db/issues"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "nodemon": "^3.1.7"
+  }
+}

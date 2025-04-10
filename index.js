@@ -124,7 +124,6 @@ db.q.add = function (pipetype, args) {
 };
 
 // interpreter
-
 db.q.run = function () {
   this.program = db.transform(this.program);
 
@@ -213,12 +212,6 @@ db.simpleTraversal = function (dir) {
     let vertex = state.edges.pop()[edge_list];
     return db.gotoVertex(state.gremlin, vertex);
   };
-};
-
-// error
-db.error = function (msg) {
-  console.error(msg);
-  return fasle;
 };
 
 // adding pipetypes
@@ -313,7 +306,7 @@ db.addPipetype("back", function (graph, args, gremlin, state) {
   return db.gotoVertex(gremlin, gremlin.state.as[args[0]]);
 });
 
-// helperks
+// helpers
 db.makeGremlin = function (vertex, state) {
   return { vertex, state: state || {} };
 };
@@ -341,7 +334,6 @@ db.objectFilter = function (thing, filter) {
 };
 
 // transformers
-
 db.t = [];
 
 db.addTransformer = function (fn, priority) {
@@ -360,7 +352,6 @@ db.transform = function (program) {
 };
 
 // aliases
-
 db.addAlias = function (newName, oldName, defaults) {
   defaults = defaults || [];
 
@@ -403,7 +394,6 @@ db.addAlias("cousins", [
 ]);
 
 // serialization
-
 db.jsonify = function (graph) {
   return (
     '{"V":' +
@@ -428,7 +418,6 @@ db.fromString = function (str) {
 };
 
 // persistence
-
 db.persist = function (graph, name) {
   name = name || "graph";
   localStorage.setItem("db::" + name, graph);
@@ -440,4 +429,9 @@ db.depersist = function (name) {
   return db.fromString(graph);
 };
 
+// error
+db.error = function (msg) {
+  console.error(msg);
+  return fasle;
+};
 console.log(db);

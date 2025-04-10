@@ -1,6 +1,6 @@
 {
-  "name": "@pr4j3sh/db",
-  "description": "In-memory database.",
+  "name": "@pr4j3sh/graphdb",
+  "description": "In-memory graph database.",
   "version": "1.0.0",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -22,6 +22,8 @@
   ],
   "keywords": [
     "database",
+    "graph",
+    "in-memory",
     "npm",
     "javascript",
     "commonjs",
@@ -29,13 +31,13 @@
   ],
   "author": "Prajesh Pratap Singh <prajesh.eleven118@gmail.com> (https://pr4j3sh.github.io/pr4j3sh/)",
   "license": "MIT",
-  "homepage": "https://github.com/pr4j3sh/db#readme",
+  "homepage": "https://github.com/pr4j3sh/graphdb#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pr4j3sh/db.git"
+    "url": "git+https://github.com/pr4j3sh/graphdb.git"
   },
   "bugs": {
-    "url": "https://github.com/pr4j3sh/db/issues"
+    "url": "https://github.com/pr4j3sh/graphdb/issues"
   },
   "devDependencies": {
     "esbuild": "^0.24.0",
